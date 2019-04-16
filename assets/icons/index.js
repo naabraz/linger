@@ -1,0 +1,1 @@
+export const jigglypuff = require('./jigglypuff.png')

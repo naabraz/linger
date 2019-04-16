@@ -7,7 +7,9 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, Image} from 'react-native';
+
+import { jigglypuff } from './assets/icons'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -23,6 +25,7 @@ export class NotScores extends Component<Props> {
     return (
       <View style={styles.container}>
         <Text style={styles.scores}>I'm not scores!</Text>
+        <Image source={jigglypuff} />
       </View>
     );
   }

@@ -13,7 +13,7 @@ export class App extends React.Component {
       'NotScores': NotScores
     }
 
-    const ReactModule = moduleDictionary[AppName]
+    const ReactModule = moduleDictionary[AppName] || moduleDictionary['NotScores']
 
     return (
       <ReactModule {...this.props} />
