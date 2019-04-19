@@ -1,10 +1,11 @@
 import React from 'react'
 import {Platform, StyleSheet, Text, View} from 'react-native'
+import codePush from 'react-native-code-push'
 
 import { Scores } from './Scores'
 import { NotScores } from './NotScores'
 
-export class App extends React.Component {
+class App extends React.Component {
   render() {
     const { AppName } = this.props
     
@@ -39,3 +40,5 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+export default codePush(MyApp);
