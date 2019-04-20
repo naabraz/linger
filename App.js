@@ -41,4 +41,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default codePush(MyApp);
+export default codePush(App);
