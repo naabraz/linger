@@ -1,6 +1,6 @@
 import React from 'react'
 import {Platform, StyleSheet, Text, View} from 'react-native'
-import codePush from 'react-native-code-push'
+import CodePush from 'react-native-code-push'
 
 import { Scores } from './Scores'
 import { NotScores } from './NotScores'
@@ -41,4 +41,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default codePush(App);
+export default CodePush(App);
