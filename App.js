@@ -5,6 +5,8 @@ import CodePush from 'react-native-code-push'
 import { Scores } from './Scores'
 import { NotScores } from './NotScores'
 
+const codePushOptions = { checkFrequency: CodePush.CheckFrequency.ON_APP_RESUME };
+
 class App extends React.Component {
   render() {
     const { AppName } = this.props
@@ -41,4 +43,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default CodePush(App);
+export default CodePush(codePushOptions)(App);
