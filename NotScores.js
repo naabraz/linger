@@ -24,7 +24,7 @@ export class NotScores extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.scores}>I'm not scores! Hooraaay!</Text>
+        <Text style={styles.scores}>I'm not scores!</Text>
         <Image source={jigglypuff} />
       </View>
     );
